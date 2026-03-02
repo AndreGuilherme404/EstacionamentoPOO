@@ -42,7 +42,7 @@ public class Main {
 					System.out.println("\nMenu de opcoes:"
 							+ "\n1 - Cadastrar Vaga\n2 - Excluir Vaga\n3 - Listar as vagas\n4 - Mudar Taxa"
 							+ "\n5 - Listar veiculos\n6 - Alterar dados de veiculo\n7 - Alterar dados de vaga"
-							+ "\n8 - Alterar tamanhos do menu" + "\n9 - Operações com Clientes");
+							+ "\n8 - Alterar tamanhos do menu" + "\n9 - Operacoes com Clientes");
 					System.out.print("Digite um numero: ");
 					int opcao2 = sc.nextInt();
 
@@ -134,7 +134,7 @@ public class Main {
 				String placa1 = sc.nextLine();
 				if (patio.validaPlaca(placa1)) {
 					if (patio.procuraVeiculo(placa1) == null) {
-						System.out.println("Placa não encontrada no sistema, deseja fazer o cadastro dela? S/N");
+						System.out.println("Placa nao encontrada no sistema, deseja fazer o cadastro dela? S/N");
 						if (sc.nextLine().equals("S")) {
 							System.out.print("Digite o modelo do veiculo: ");
 							String modelo = sc.nextLine();
@@ -150,7 +150,7 @@ public class Main {
 								System.out.println("Digite um cpf valido!");
 							} else {
 								if (patio.repeticaoCPF(CPF.valida(cpf)) == null) {
-									System.out.print("Cliente não encontrado no sistema, iniciando cadastro...");
+									System.out.print("Cliente nao encontrado no sistema, iniciando cadastro...");
 
 									c1 = Gestao.criarCliente(cpf);
 									v1 = Veiculo.getInstance(placa1, modelo, cor, marca, vagaLivre.getTipo(), c1);
@@ -173,7 +173,7 @@ public class Main {
 						patio.add(patio.procuraVeiculo(placa1));
 					}
 				} else {
-					System.out.println("Placa não está no modelo mercosul");
+					System.out.println("Placa nao esta no modelo mercosul");
 				}
 
 			} else { // se retorna -1 é porque não tem vaga
@@ -459,7 +459,7 @@ public class Main {
 						break;
 				}
 			} else {
-				System.out.println("Uma vaga com esse indice não existe");
+				System.out.println("Uma vaga com esse indice nao existe");
 			}
 		}
 
@@ -527,7 +527,7 @@ public class Main {
 				patio.editarRegistro(c, Cliente.getInstance(nome, cpf));
 
 			} else {
-				System.out.print("\nDigite um cpf válido!");
+				System.out.print("\nDigite um cpf valido!");
 			}
 		}
 
@@ -548,3 +548,4 @@ public class Main {
 	}
 
 }
+
