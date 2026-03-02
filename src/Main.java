@@ -200,6 +200,7 @@ public class Main {
 			System.out.print("Digite um numero: ");
 			int tipo = sc.nextInt();
 			patio.cadastrarVaga(tipo);
+			System.out.print("Vaga cadastrada com sucesso");
 		}
 
 		static void excluirVaga() {
@@ -548,5 +549,6 @@ public class Main {
 	}
 
 }
+
 
 
