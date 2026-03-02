@@ -35,7 +35,7 @@ Para rodar este projeto, você precisará ter o [Java JDK](https://www.oracle.co
    git clone https://github.com/AndreGuilherme404/EstacionamentoPOO.git
 2. Navegue até a pasta src do projeto
    ```bash
-   cd NOME_DO_REPOSITORIO/src
+   cd EstacionamentoPOO/src
 3. Compile os arquivos Java (no Windows/Prompt de Comando):
    ```bash
    javac *.java
