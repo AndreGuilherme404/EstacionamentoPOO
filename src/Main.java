@@ -150,7 +150,7 @@ public class Main {
 								System.out.println("Digite um cpf valido!");
 							} else {
 								if (patio.repeticaoCPF(CPF.valida(cpf)) == null) {
-									System.out.print("Cliente nao encontrado no sistema, iniciando cadastro...");
+									System.out.print("Cliente nao encontrado no sistema, iniciando cadastro...\n");
 
 									c1 = Gestao.criarCliente(cpf);
 									v1 = Veiculo.getInstance(placa1, modelo, cor, marca, vagaLivre.getTipo(), c1);
@@ -548,4 +548,5 @@ public class Main {
 	}
 
 }
+
 
